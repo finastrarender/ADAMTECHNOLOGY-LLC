@@ -110,7 +110,7 @@ ul {
 
 /* ===== Page Header ===== */
 .page-header {
-  background: var(--white);
+  background: linear-gradient(90deg, #ffffff 0%, #dde5f0 100%);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -148,6 +148,13 @@ ul {
 
 .logo-accent {
   color: #143377;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  margin-left: auto;
 }
 
 .nav-links {
@@ -222,7 +229,7 @@ ul {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(255, 255, 255, 0.85);
+  background: #DEE8FF;
   border: 1px solid rgba(15, 42, 101, 0.1);
   padding: 8px 16px;
   border-radius: 50px;
@@ -855,44 +862,66 @@ ul {
   }
 
   .hero-content {
-    grid-template-columns: 1fr;
-    gap: 32px;
+    gap: 20px;
     min-height: auto;
     padding-top: 24px;
     padding-bottom: 48px;
-    text-align: left;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
   }
 
   .hero-text {
-    order: 1;
     max-width: 100%;
-    padding-right: 0;
+    padding-right: 8px;
+  }
+
+  .hero-text h1 {
+    font-size: clamp(1.6rem, 3vw, 2rem);
+    line-height: 1.12;
+    letter-spacing: -0.6px;
+    margin-bottom: 16px;
+  }
+
+  .hero-text h1 .hero-line:first-child {
+    white-space: normal;
+  }
+
+  .hero-desc {
+    font-size: 0.92rem;
+    line-height: 1.65;
+    margin-bottom: 28px;
+    max-width: 100%;
+  }
+
+  .badge {
+    font-size: 0.62rem;
+    padding: 6px 12px;
+    margin-bottom: 20px;
   }
 
   .hero-visual {
-    order: 2;
-    min-height: 340px;
-    justify-content: center;
+    min-height: 320px;
     margin-right: 0;
     width: 100%;
+    justify-content: flex-end;
   }
 
   .hero-visual-composite {
-    height: 360px;
-    max-width: 520px;
-    margin: 0 auto;
+    height: min(380px, 52vh);
+    min-height: 300px;
+    max-width: 100%;
   }
 
   .hero-img-hand {
-    width: 110%;
+    width: 112%;
     max-height: 54%;
-    bottom: 0;
+    bottom: -4px;
     right: 0;
   }
 
   .hero-img-globe {
-    width: min(68%, 250px);
-    top: 4%;
+    width: min(64%, 220px);
+    top: 5%;
     transform: translateX(-50%);
   }
 
@@ -946,9 +975,16 @@ ul {
   }
 
   .hero-content {
+    grid-template-columns: 1fr;
     padding-top: 16px;
     padding-bottom: 40px;
     gap: 24px;
+    text-align: left;
+  }
+
+  .hero-text {
+    order: 1;
+    padding-right: 0;
   }
 
   .hero-text h1 {
@@ -970,12 +1006,17 @@ ul {
   }
 
   .hero-visual {
+    order: 2;
     min-height: 280px;
+    justify-content: center;
+    margin-right: 0;
+    width: 100%;
   }
 
   .hero-visual-composite {
     height: 300px;
-    max-width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
   }
 
   .hero-img-hand {
@@ -989,6 +1030,10 @@ ul {
     width: min(65%, 210px);
     top: 2%;
     transform: translateX(-50%);
+  }
+
+  .nav-actions {
+    gap: 0;
   }
 
   .nav-links,

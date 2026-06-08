@@ -6,7 +6,7 @@
 
 /* Page Header */
 .page-header {
-  background: var(--white);
+  background: linear-gradient(90deg, #ffffff 0%, #dde5f0 100%);
   position: sticky;
   top: 0;
   z-index: 100;
