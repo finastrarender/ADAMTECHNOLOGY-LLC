@@ -108,9 +108,23 @@ ul {
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
 }
 
+/* ===== Page Header ===== */
+.page-header {
+  background: var(--white);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.page-header .navbar {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 /* ===== Hero ===== */
 .hero {
-  min-height: 100vh;
+  min-height: calc(100vh - 76px);
   background: linear-gradient(145deg, #ffffff 0%, #f8fafc 25%, #eef3fa 50%, #dce6f4 75%, #c5d4ea 100%);
   position: relative;
   overflow-x: clip;
@@ -121,8 +135,6 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 28px;
-  padding-bottom: 28px;
   position: relative;
   z-index: 10;
 }
@@ -130,8 +142,12 @@ ul {
 .logo {
   font-size: 1.35rem;
   font-weight: 800;
-  color: var(--navy);
+  color: black;
   letter-spacing: -0.02em;
+}
+
+.logo-accent {
+  color: #143377;
 }
 
 .nav-links {
@@ -190,7 +206,7 @@ ul {
   gap: 32px;
   padding-top: 32px;
   padding-bottom: 64px;
-  min-height: calc(100vh - 96px);
+  min-height: calc(100vh - 76px);
   overflow: visible;
   position: relative;
 }
@@ -228,11 +244,11 @@ ul {
 
 .hero-text h1 {
   font-family: 'Syne', sans-serif;
-  font-size: clamp(1.75rem, 4vw, 48px);
-  font-weight: 800;
+  font-size: clamp(1.5rem, 3.2vw, 38px);
+  font-weight: 700;
   line-height: 1.1;
   color: var(--navy);
-  letter-spacing: -0.96px;
+  letter-spacing: -0.8px;
   margin-bottom: 20px;
 }
 
@@ -299,9 +315,9 @@ ul {
 
 @media (min-width: 1025px) {
   .hero-text h1 {
-    font-size: 48px;
-    line-height: 52.8px;
-    letter-spacing: -0.96px;
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: -0.8px;
   }
 
   .hero-text h1 .hero-line:first-child {
@@ -328,55 +344,51 @@ ul {
 
 /* ===== License Bar ===== */
 .license-bar {
-  background: var(--navy-light);
-  padding: 28px 0 32px;
-  overflow: hidden;
+  background: var(--navy);
+  padding: 52px 0 60px;
+}
+
+.license-bar-inner {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 40px;
 }
 
 .license-text {
   text-align: center;
-  color: rgba(255, 255, 255, 0.85);
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
+  color: var(--white);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  margin-bottom: 24px;
+  margin-bottom: 36px;
 }
 
-.logo-marquee {
-  overflow: hidden;
-  mask-image: linear-gradient(90deg, transparent, black 8%, black 92%, transparent);
-}
-
-.logo-track {
+.logo-row {
   display: flex;
   align-items: center;
-  gap: 64px;
-  animation: marquee 25s linear infinite;
-  width: max-content;
+  justify-content: space-between;
+  gap: 32px;
+  width: 100%;
 }
 
 .logo-item {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 0.85rem;
+  color: var(--white);
+  font-size: 0.875rem;
   font-weight: 700;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   white-space: nowrap;
   flex-shrink: 0;
 }
 
 .logo-item svg {
-  width: 22px;
-  height: 22px;
-  opacity: 0.85;
-}
-
-@keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
 }
 
 /* ===== About ===== */
@@ -717,6 +729,15 @@ ul {
   margin-bottom: 16px;
 }
 
+.footer-col h3 a {
+  color: inherit;
+  transition: color 0.2s;
+}
+
+.footer-col h3 a:hover {
+  color: rgba(255, 255, 255, 0.85);
+}
+
 .footer-col h4 {
   font-size: 1rem;
   font-weight: 700;
@@ -727,6 +748,15 @@ ul {
   font-size: 0.92rem;
   color: rgba(255, 255, 255, 0.75);
   line-height: 1.7;
+}
+
+.footer-col p a {
+  color: rgba(255, 255, 255, 0.75);
+  transition: color 0.2s;
+}
+
+.footer-col p a:hover {
+  color: var(--white);
 }
 
 .footer-col ul li {
@@ -796,6 +826,14 @@ ul {
 
 .footer-legal a:hover {
   color: var(--white);
+}
+
+#project,
+#cybersecurity,
+#cloud-infrastructure,
+#data-intelligence,
+#blockchain {
+  scroll-margin-top: 96px;
 }
 
 /* ===== Responsive ===== */
@@ -878,6 +916,35 @@ ul {
     padding: 0 24px;
   }
 
+  .license-bar {
+    padding: 40px 0 48px;
+  }
+
+  .license-bar-inner {
+    padding: 0 24px;
+  }
+
+  .license-text {
+    font-size: 0.625rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 28px;
+  }
+
+  .logo-row {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px 40px;
+  }
+
+  .logo-item {
+    font-size: 0.8rem;
+  }
+
+  .logo-item svg {
+    width: 20px;
+    height: 20px;
+  }
+
   .hero-content {
     padding-top: 16px;
     padding-bottom: 40px;
@@ -885,9 +952,9 @@ ul {
   }
 
   .hero-text h1 {
-    font-size: clamp(1.6rem, 5.5vw, 2rem);
+    font-size: clamp(1.35rem, 4.5vw, 1.75rem);
     line-height: 1.12;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.4px;
     margin-bottom: 16px;
   }
 
@@ -966,6 +1033,10 @@ ul {
     gap: 32px;
   }
 
+  .social-icons {
+    margin-bottom: 24px;
+  }
+
   .footer-bottom {
     flex-direction: column;
     gap: 16px;
@@ -980,9 +1051,9 @@ ul {
   }
 
   .hero-text h1 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 1.15;
-    letter-spacing: -0.4px;
+    letter-spacing: -0.35px;
   }
 
   .hero-desc {

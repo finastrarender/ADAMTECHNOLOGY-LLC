@@ -15,7 +15,7 @@
   <!-- Navigation -->
   <header class="page-header">
     <nav class="navbar container">
-      <a href="index.html" class="logo">Adam Technology</a>
+      <a href="index.html" class="logo">Adam <span class="logo-accent">Technology</span></a>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="./services.html">Services</a></li>
@@ -48,7 +48,7 @@
       <!-- Form -->
       <div class="contact-form-wrap">
         <h2>Initialize Engagement</h2>
-        <form class="contact-form" action="#" method="post">
+        <form class="contact-form" id="contactForm" action="#" method="post" novalidate>
           <div class="form-row">
             <div class="form-group">
               <label for="fullName">Full Name</label>
@@ -80,7 +80,12 @@
             <label for="projectBrief">Project Brief</label>
             <textarea id="projectBrief" name="projectBrief" rows="5" placeholder="Describe your technical requirements..." required></textarea>
           </div>
-          <button type="submit" class="btn-submit">Submit Inquiry</button>
+          <button type="submit" class="btn-submit" id="submitInquiry">Submit Inquiry</button>
+          <div class="form-success" id="formSuccess" role="status" aria-live="polite">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <p class="form-success-title">Submitted successfully!</p>
+            <p class="form-success-text">Thank you for your inquiry. Our team will get back to you shortly.</p>
+          </div>
           <p class="form-disclaimer">
             Your data is protected under UAE Federal Decree-Law No. 45 of 2021.
           </p>
@@ -112,11 +117,11 @@
           </div>
           <div class="office-details">
             <div class="detail-row">
-              <span>License No.</span>
+              <span>License No:</span>
               <span>1095293</span>
             </div>
             <div class="detail-row">
-              <span>TRN Number</span>
+              <span>TRN Number:</span>
               <span>100523490100003</span>
             </div>
           </div>
@@ -142,30 +147,30 @@
   <footer class="footer">
     <div class="container footer-grid">
       <div class="footer-col">
-        <h3>Adam Technology</h3>
+        <h3><a href="./index.html">Adam Technology</a></h3>
         <p>Pioneering secure digital horizons from the heart of Dubai. Fully licensed and enterprise-ready.</p>
       </div>
       <div class="footer-col">
         <h4>Services</h4>
         <ul>
-          <li><a href="services.html">Cybersecurity</a></li>
-          <li><a href="services.html">Cloud Infrastructure</a></li>
-          <li><a href="services.html">Data Intelligence</a></li>
-          <li><a href="services.html">Blockchain</a></li>
+          <li><a href="./services.html#cybersecurity">Cybersecurity</a></li>
+          <li><a href="./services.html#cloud-infrastructure">Cloud Infrastructure</a></li>
+          <li><a href="./services.html#data-intelligence">Data Intelligence</a></li>
+          <li><a href="./services.html#blockchain">Blockchain</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Company</h4>
         <ul>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="index.html#project">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="#">Terms of Service</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./index.html#project">Projects</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./contact.html">Terms of Service</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Office</h4>
-        <p>Business Bay, Downtown Dubai<br>United Arab Emirates</p>
+        <p><a href="./contact.html">Business Bay, Downtown Dubai<br>United Arab Emirates</a></p>
         <div class="social-icons">
           <a href="#" aria-label="Website">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
@@ -179,8 +184,8 @@
     <div class="footer-bottom container">
       <p>&copy; 2024 Adam Technology LLC. Dubai License No: 1095293</p>
       <div class="footer-legal">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Cookie Settings</a>
+        <a href="./contact.html">Privacy Policy</a>
+        <a href="./contact.html">Cookie Settings</a>
       </div>
     </div>
   </footer>

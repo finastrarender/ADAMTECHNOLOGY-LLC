@@ -7,10 +7,10 @@
 /* Page Header */
 .page-header {
   background: var(--white);
-  border-bottom: 1px solid #e5e7eb;
   position: sticky;
   top: 0;
   z-index: 100;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
 }
 
 .page-header .navbar {

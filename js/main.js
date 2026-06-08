@@ -1,4 +1,25 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const contactForm = document.getElementById('contactForm');
+  const submitInquiry = document.getElementById('submitInquiry');
+  const formSuccess = document.getElementById('formSuccess');
+
+  if (contactForm && submitInquiry && formSuccess) {
+    contactForm.addEventListener('submit', (e) => e.preventDefault());
+
+    submitInquiry.addEventListener('click', (e) => {
+      e.preventDefault();
+      formSuccess.classList.remove('is-visible');
+
+      if (!contactForm.checkValidity()) {
+        contactForm.reportValidity();
+        return;
+      }
+
+      formSuccess.classList.add('is-visible');
+      contactForm.reset();
+    });
+  }
+
   const toggle = document.querySelector('.nav-toggle');
   const navLinks = document.querySelector('.nav-links');
 

@@ -123,17 +123,17 @@
   font-size: 1rem;
   font-weight: 700;
   color: var(--white);
-  background: #2563eb;
+  background: linear-gradient(135deg, #0051D5 0%, #316BF3 100%);
   border: none;
   border-radius: var(--radius-sm);
   padding: 16px 24px;
   cursor: pointer;
-  transition: background 0.2s, transform 0.2s;
+  transition: filter 0.2s, transform 0.2s;
   margin-top: 8px;
 }
 
 .btn-submit:hover {
-  background: #1d4ed8;
+  filter: brightness(1.08);
   transform: translateY(-1px);
 }
 
@@ -142,6 +142,43 @@
   font-size: 0.78rem;
   color: var(--text-muted);
   margin-top: 4px;
+}
+
+.form-success {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 24px 32px;
+  background: #f0fdf4;
+  border: 1.5px solid #86efac;
+  border-radius: var(--radius-md);
+  margin-top: 8px;
+}
+
+.form-success.is-visible {
+  display: flex;
+}
+
+.form-success svg {
+  width: 48px;
+  height: 48px;
+  color: #16a34a;
+  margin-bottom: 16px;
+}
+
+.form-success-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+}
+
+.form-success-text {
+  font-size: 0.95rem;
+  color: var(--text-body);
+  max-width: 360px;
+  line-height: 1.6;
 }
 
 /* Sidebar */
