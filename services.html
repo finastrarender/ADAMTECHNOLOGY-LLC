@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services — Adam Technology</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/services.css">
+</head>
+<body class="services-page">
+
+  <!-- Navigation -->
+  <header class="page-header">
+    <nav class="navbar container">
+      <a href="index.html" class="logo">Adam Technology</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="./services.html" class="active">Services</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="index.html#project">Project</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+      <a href="./contact.html" class="btn btn-nav">Inquire</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Services Hero -->
+  <section class="services-hero">
+    <div class="container">
+      <p class="services-eyebrow">Strategic Technology Partner</p>
+      <h1>Our Services</h1>
+      <p class="services-hero-desc">
+        We provide high-stakes enterprise technology excellence, architecting resilient
+        infrastructures and innovative software solutions that drive global digital transformation.
+      </p>
+    </div>
+  </section>
+
+  <!-- Service Cards -->
+  <section class="services-content">
+    <div class="container">
+
+      <!-- Cybersecurity — Full Width -->
+      <article class="service-card service-card--featured">
+        <div class="service-card-body">
+          <div class="service-card-header">
+            <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <h2>Cybersecurity</h2>
+          </div>
+          <p class="service-desc">
+            Comprehensive threat detection and mitigation strategies designed to protect
+            mission-critical enterprise assets and ensure regulatory compliance.
+          </p>
+          <div class="service-details">
+            <div class="service-detail-col">
+              <h3>Key Features</h3>
+              <ul class="service-list">
+                <li>Zero Trust Architecture</li>
+                <li>24/7 SIEM/SOC Monitoring</li>
+                <li>Vulnerability Management</li>
+              </ul>
+            </div>
+            <div class="service-detail-col">
+              <h3>Tech Stack</h3>
+              <div class="tech-tags">
+                <span class="tech-tag">SPLUNK</span>
+                <span class="tech-tag">PALO ALTO</span>
+                <span class="tech-tag">CROWDSTRIKE</span>
+              </div>
+            </div>
+          </div>
+          <button class="btn-brief">Request Technical Brief</button>
+        </div>
+        <div class="service-card-image">
+          <img src="images/cybersecurity.jpg" alt="Abstract cybersecurity infrastructure visualization">
+        </div>
+      </article>
+
+      <!-- Cloud + Data — Two Column -->
+      <div class="services-row services-row--equal">
+        <article class="service-card">
+          <div class="service-card-header">
+            <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+            <h2>Cloud Solutions</h2>
+          </div>
+          <p class="service-desc">
+            Scalable cloud orchestration and hybrid-cloud management to optimize performance
+            and reduce operational overhead.
+          </p>
+          <div class="tech-tags">
+            <span class="tech-tag">Azure</span>
+            <span class="tech-tag">AWS</span>
+            <span class="tech-tag">GCP</span>
+          </div>
+          <button class="btn-brief btn-brief--full">Request Technical Brief</button>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card-header">
+            <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            <h2>Data Services</h2>
+          </div>
+          <p class="service-desc">
+            Unlocking the power of enterprise data through advanced analytics, AI-driven
+            insights, and robust governance frameworks.
+          </p>
+          <div class="tech-tags">
+            <span class="tech-tag">Snowflake</span>
+            <span class="tech-tag">Tableau</span>
+            <span class="tech-tag">Databricks</span>
+          </div>
+          <button class="btn-brief btn-brief--full">Request Technical Brief</button>
+        </article>
+      </div>
+
+      <!-- Blockchain + Software Dev — Asymmetric -->
+      <div class="services-row services-row--split">
+        <article class="service-card">
+          <div class="service-card-header">
+            <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><circle cx="5" cy="7" r="2"/><circle cx="19" cy="7" r="2"/><circle cx="5" cy="17" r="2"/><circle cx="19" cy="17" r="2"/><line x1="12" y1="9" x2="6.5" y2="8"/><line x1="12" y1="9" x2="17.5" y2="8"/><line x1="12" y1="15" x2="6.5" y2="16"/><line x1="12" y1="15" x2="17.5" y2="16"/></svg>
+            <h2>Blockchain</h2>
+          </div>
+          <p class="service-desc">
+            Decentralized ledger technology for supply chain transparency, secure identity
+            management, and smart contract automation.
+          </p>
+          <div class="service-card-image service-card-image--inline">
+            <img src="images/blockchain.jpg" alt="Digital blockchain cube visualization">
+          </div>
+          <button class="btn-brief btn-brief--full">Request Technical Brief</button>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card-header">
+            <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            <h2>Software Development</h2>
+          </div>
+          <p class="service-desc">
+            Custom-built enterprise software that bridges the gap between complex legacy
+            systems and modern user experiences.
+          </p>
+          <div class="service-details">
+            <div class="service-detail-col">
+              <h3 class="detail-label">Process</h3>
+              <ul class="service-list">
+                <li>Agile Methodologies</li>
+                <li>DevOps Integration</li>
+                <li>Microservices Architecture</li>
+              </ul>
+            </div>
+            <div class="service-detail-col">
+              <h3 class="detail-label">Stack</h3>
+              <ul class="service-list">
+                <li>.NET / Java Core</li>
+                <li>React / Next.js</li>
+                <li>Docker / Kubernetes</li>
+              </ul>
+            </div>
+          </div>
+          <button class="btn-brief btn-brief--full btn-brief--accent">Request Technical Brief</button>
+        </article>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h3>Adam Technology</h3>
+        <p>Pioneering secure digital horizons from the heart of Dubai. Fully licensed and enterprise-ready.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Cybersecurity</a></li>
+          <li><a href="services.html">Cloud Infrastructure</a></li>
+          <li><a href="services.html">Data Intelligence</a></li>
+          <li><a href="services.html">Blockchain</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="index.html#project">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Office</h4>
+        <p>Business Bay, Downtown Dubai<br>United Arab Emirates</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Website">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>&copy; 2024 Adam Technology LLC. Dubai License No: 1095293</p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Cookie Settings</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
