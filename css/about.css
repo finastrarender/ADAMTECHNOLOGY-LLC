@@ -924,6 +924,7 @@
     border-radius: 12px;
     padding: 22px;
     transition: all 0.3s ease;
+    text-align: left;
 }
 
 .why-card:hover {
@@ -937,7 +938,7 @@
 .why-card .as-icon-tile {
     width: 34px;
     height: 34px;
-    margin-bottom: 18px;
+    margin: 0 0 18px 0;
     display: flex;
     align-items: center;
     justify-content: flex-start;
