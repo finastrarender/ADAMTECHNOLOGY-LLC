@@ -572,20 +572,23 @@
 
 /* Icon */
 .as-icon-tile {
-  width: 52px;
-  height: 52px;
-  margin: 0 auto 18px;
-  border-radius: 50%;
-  background: #eef4ff;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 8px;
+  min-width: 52px;
+  height: 52px;
+  margin: 0 auto 18px;
+  padding: 10px;
+  border-radius: 50%;
+  background: #eef4ff;
   color: #2563eb;
 }
 
-.as-icon-tile svg {
-  width: 22px;
-  height: 22px;
+.as-icon-tile svg,
+.as-icon-tile i > svg {
+  width: 18px;
+  height: 18px;
   stroke-width: 2;
 }
 

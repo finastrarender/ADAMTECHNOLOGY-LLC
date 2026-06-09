@@ -129,7 +129,7 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 48px 40px;
     }
-    .cap-item {}
+    
     .cap-icon {
       width: 42px; height: 42px;
       background: #f0f4ff;
@@ -149,6 +149,77 @@
       font-size: 0.83rem;
       color: #555;
       line-height: 1.65;
+    }
+
+    .values-section {
+      padding: 92px 0 76px;
+      background: #f8f9ff;
+    }
+    .values-section h2 {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #0a0f1e;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+    .values-section p {
+      max-width: 680px;
+      margin-bottom: 40px;
+      color: #4f566d;
+      line-height: 1.8;
+      font-size: 0.98rem;
+    }
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 24px;
+    }
+    .value-card {
+      background: #ffffff;
+      border: 1px solid rgba(15, 35, 85, 0.08);
+      border-radius: 24px;
+      padding: 34px 28px;
+      box-shadow: 0 16px 32px rgba(15, 35, 85, 0.05);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      min-height: 260px;
+    }
+    .value-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 16px;
+      display: grid;
+      place-items: center;
+      background: rgba(79, 142, 247, 0.12);
+      color: #2d5de0;
+    }
+    .value-icon svg {
+      width: 24px;
+      height: 24px;
+    }
+    .value-card h3 {
+      font-size: 1rem;
+      font-weight: 800;
+      color: #0a0f1e;
+      margin: 0;
+    }
+    .value-card p {
+      margin: 0;
+      color: #5d647d;
+      line-height: 1.8;
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 992px) {
+      .values-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+    @media (max-width: 680px) {
+      .values-grid {
+        grid-template-columns: 1fr;
+      }
     }
 
     /* ─── PROJECTS ─── */
@@ -380,6 +451,8 @@
     </div>
   </section>
 
+
+
   <!-- ─── Projects ─── -->
   <!-- Portfolio -->
   <section class="portfolio">
@@ -544,7 +617,7 @@
         <h4>Company</h4>
         <ul>
           <li><a href="./about.html">About Us</a></li>
-          <li><a href="./index.html#project">Projects</a></li>
+          <li><a href="./project.html">Projects</a></li>
           <li><a href="./contact.html">Contact</a></li>
           <li><a href="./contact.html">Terms of Service</a></li>
         </ul>
@@ -553,10 +626,10 @@
         <h4>Office</h4>
         <p><a href="./contact.html">Business Bay, Downtown Dubai<br>United Arab Emirates</a></p>
         <div class="social-icons">
-          <a href="#" aria-label="Website">
+          <a  aria-label="Website">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
           </a>
-          <a href="#" aria-label="Instagram">
+          <a  aria-label="Instagram">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
           </a>
         </div>
@@ -565,8 +638,8 @@
     <div class="footer-bottom container">
       <p>&copy; 2024 Adam Technology LLC. Dubai License No: 1095293</p>
       <div class="footer-legal">
-        <a href="./contact.html">Privacy Policy</a>
-        <a href="./contact.html">Cookie Settings</a>
+        <a>Privacy Policy</a>
+        <a>Cookie Settings</a>
       </div>
     </div>
   </footer>
