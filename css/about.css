@@ -546,6 +546,9 @@
   max-width: 650px;
   margin: 0 auto 50px;
   text-align: center;
+  text-align-last: center;
+  hyphens: none;
+  -webkit-hyphens: none;
   font-size: 0.95rem;
   line-height: 1.7;
   color: #6b7280;
@@ -696,6 +699,10 @@
 .licensed-header .as-section-sub {
     max-width: 620px;
     margin: 0 auto;
+    text-align: center;
+    text-align-last: center;
+    hyphens: none;
+    -webkit-hyphens: none;
     font-size: 0.95rem;
     color: #64748b;
     line-height: 1.7;
@@ -911,6 +918,9 @@
 
 .why-choose .as-section-sub {
     text-align: center;
+    text-align-last: center;
+    hyphens: none;
+    -webkit-hyphens: none;
     max-width: 650px;
     margin: 0 auto 55px;
     color: #64748b;
