@@ -37,19 +37,12 @@ body {
 }
 
 p {
-  text-align: justify;
-  text-align-last: left;
-  text-wrap: pretty;
-  hyphens: auto;
-  -webkit-hyphens: auto;
-}
-
-.card p,
-.feature-item p,
-.footer-col p {
   text-align: left;
+  text-wrap: pretty;
   hyphens: none;
   -webkit-hyphens: none;
+  word-break: normal;
+  overflow-wrap: normal;
 }
 
 img {
