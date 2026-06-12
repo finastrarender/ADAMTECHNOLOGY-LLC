@@ -144,6 +144,10 @@
   margin-top: 4px;
 }
 
+.form-success p {
+  text-align: center;
+}
+
 .form-success {
   display: none;
   flex-direction: column;

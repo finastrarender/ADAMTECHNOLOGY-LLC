@@ -36,6 +36,22 @@ body {
   overflow-x: hidden;
 }
 
+p {
+  text-align: justify;
+  text-align-last: left;
+  text-wrap: pretty;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
+.card p,
+.feature-item p,
+.footer-col p {
+  text-align: left;
+  hyphens: none;
+  -webkit-hyphens: none;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -838,6 +854,7 @@ ul {
   margin: 0 auto 32px;
   line-height: 1.7;
   position: relative;
+  text-align: center;
 }
 
 .cta-banner .btn {

@@ -93,6 +93,12 @@
   margin-bottom: 24px;
 }
 
+.service-card:not(.service-card--featured) .service-desc {
+  text-align: left;
+  hyphens: none;
+  -webkit-hyphens: none;
+}
+
 /* Featured Card — Cybersecurity */
 .service-card--featured {
   display: grid;

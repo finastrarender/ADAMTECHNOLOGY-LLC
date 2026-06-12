@@ -325,22 +325,23 @@
   line-height: 1.2;
 }
 
-.mission-box p {
-  font-size: 1.125rem;
-  line-height: 1.6;
-  font-weight: 400;
-  color: #d1d5db;
-  text-align: left;
-  margin: 0;
-}
-
+.mission-box p,
 .vision-box p {
   font-size: 1.125rem;
   line-height: 1.6;
   font-weight: 400;
-  color: #ffffff;
-  text-align: left;
   margin: 0;
+  text-align: left;
+  hyphens: none;
+  -webkit-hyphens: none;
+}
+
+.mission-box p {
+  color: #d1d5db;
+}
+
+.vision-box p {
+  color: #ffffff;
 }
 
 .mission-box strong {
@@ -458,6 +459,9 @@
   font-size: 0.9rem;
   color: var(--text-body);
   line-height: 1.65;
+  text-align: left;
+  hyphens: none;
+  -webkit-hyphens: none;
 }
 
 .portfolio-footer {
@@ -606,6 +610,9 @@
   line-height: 1.6;
   color: #6b7280;
   margin: 0;
+  text-align: left;
+  hyphens: none;
+  -webkit-hyphens: none;
 }
 
 /* Tablet */
@@ -828,6 +835,9 @@
     line-height: 1.8;
     color: rgba(255,255,255,0.78);
     margin: 0;
+    text-align: left;
+    hyphens: none;
+    -webkit-hyphens: none;
 }
 
 /* Tablet */
@@ -969,6 +979,9 @@
     line-height: 1.7;
     color: #64748b;
     margin: 0;
+    text-align: left;
+    hyphens: none;
+    -webkit-hyphens: none;
 }
 
 /* Tablet */

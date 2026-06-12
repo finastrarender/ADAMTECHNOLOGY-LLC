@@ -243,6 +243,9 @@
   font-size: 0.9rem;
   color: var(--text-body);
   line-height: 1.65;
+  text-align: left;
+  hyphens: none;
+  -webkit-hyphens: none;
 }
 
 .portfolio-footer {
